@@ -1,1 +1,1 @@
-AngularTISC - Angular based UI for ConcepTIS
+AngularTISC - Angular based UI for  ConcepTIS

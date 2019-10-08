@@ -1,0 +1,328 @@
+
+{
+  "header": {
+    "reportVersion": 1,
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20191003.172233.1222.0.001.json",
+    "dumpEventTime": "2019-10-03T17:22:33Z",
+    "dumpEventTimeStamp": "1570112553874",
+    "processId": 1222,
+    "cwd": "/s/proj/AngularTISC/ConcepTIS",
+    "commandLine": [
+      "node",
+      "/usr/local/bin/ng",
+      "serve",
+      "-o"
+    ],
+    "nodejsVersion": "v12.8.1",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "freebsd",
+    "componentVersions": {
+      "node": "12.8.1",
+      "v8": "7.5.288.22-node.16",
+      "uv": "1.30.1",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.15.0",
+      "modules": "72",
+      "nghttp2": "1.39.2",
+      "napi": "4",
+      "llhttp": "1.1.4",
+      "http_parser": "2.8.0",
+      "openssl": "1.1.1c",
+      "cldr": "35.1",
+      "icu": "64.2",
+      "tz": "2019a",
+      "unicode": "12.1"
+    },
+    "release": {
+      "name": "node",
+      "headersUrl": "https://nodejs.org/download/release/v12.8.1/node-v12.8.1-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v12.8.1/node-v12.8.1.tar.gz"
+    },
+    "osName": "FreeBSD",
+    "osRelease": "11.3-RELEASE",
+    "osVersion": "FreeBSD 11.3-RELEASE #0 r349754: Fri Jul  5 04:45:24 UTC 2019     root@releng2.nyi.freebsd.org:/usr/obj/usr/src/sys/GENERIC",
+    "osMachine": "amd64",
+    "cpus": [
+      {
+        "model": "AMD A6-5200 APU with Radeon(TM) HD Graphics    ",
+        "speed": 1996,
+        "user": 348614,
+        "nice": 0,
+        "sys": 440902,
+        "idle": 3970841,
+        "irq": 20223
+      }
+    ],
+    "networkInterfaces": [
+      {
+        "name": "em0",
+        "internal": false,
+        "mac": "08:00:27:e0:05:f9",
+        "address": "172.16.151.180",
+        "netmask": "255.255.255.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "lo0",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "::1",
+        "netmask": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "lo0",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "fe80::1",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 2
+      },
+      {
+        "name": "lo0",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "127.0.0.1",
+        "netmask": "255.0.0.0",
+        "family": "IPv4"
+      }
+    ],
+    "host": "ConcepTIS"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+    {
+      "pc": "0x00000000009c8621",
+      "symbol": "report::TriggerNodeReport(v8::Isolate*, node::Environment*, char const*, char const, std::__1::basic_string<char, char const*::char_traits<char>, char const*::allocator<char> > const&, report::TriggerNodeReport::Local<report::TriggerNodeReport::String>) [/usr/local/bin/node]"
+    },
+    {
+      "pc": "0x00000000008ceb91",
+      "symbol": "node::OnFatalError(char const*, char const) [/usr/local/bin/node]"
+    },
+    {
+      "pc": "0x0000000000a03ec3",
+      "symbol": "v8::Utils::ReportOOMFailure(v8::internal::Isolate*, char const*, bool) [/usr/local/bin/node]"
+    },
+    {
+      "pc": "0x0000000000a03e6a",
+      "symbol": "v8::internal::V8::FatalProcessOutOfMemory(v8::internal::Isolate*, char const*, bool) [/usr/local/bin/node]"
+    },
+    {
+      "pc": "0x0000000000bbd215",
+      "symbol": "v8::internal::Heap::FatalProcessOutOfMemory(char const*) [/usr/local/bin/node]"
+    },
+    {
+      "pc": "0x0000000000bbbe7b",
+      "symbol": "v8::internal::Heap::PerformGarbageCollection(v8::internal::GarbageCollector, v8::GCCallbackFlags) [/usr/local/bin/node]"
+    },
+    {
+      "pc": "0x0000000000bb95c3",
+      "symbol": "v8::internal::Heap::CollectGarbage(v8::internal::AllocationSpace, v8::internal::GarbageCollectionReason, v8::GCCallbackFlags) [/usr/local/bin/node]"
+    },
+    {
+      "pc": "0x0000000000bc43d4",
+      "symbol": "v8::internal::Heap::AllocateRawWithLightRetry(int, v8::internal::AllocationType, v8::internal::AllocationAlignment) [/usr/local/bin/node]"
+    },
+    {
+      "pc": "0x0000000000bc444f",
+      "symbol": "v8::internal::Heap::AllocateRawWithRetryOrFail(int, v8::internal::AllocationType, v8::internal::AllocationAlignment) [/usr/local/bin/node]"
+    },
+    {
+      "pc": "0x0000000000b963d6",
+      "symbol": "v8::internal::Factory::NewFillerObject(int, bool, v8::internal::AllocationType) [/usr/local/bin/node]"
+    }
+  ],
+  "javascriptHeap": {
+    "totalMemory": 271429632,
+    "totalCommittedMemory": 271429632,
+    "usedMemory": 257241584,
+    "availableMemory": 11670056,
+    "memoryLimit": 271581184,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 262144,
+        "committedMemory": 262144,
+        "capacity": 261832,
+        "used": 31960,
+        "available": 229872
+      },
+      "new_space": {
+        "memorySize": 2097152,
+        "committedMemory": 2097152,
+        "capacity": 1047328,
+        "used": 428816,
+        "available": 618512
+      },
+      "old_space": {
+        "memorySize": 217985024,
+        "committedMemory": 217985024,
+        "capacity": 217622552,
+        "used": 207999760,
+        "available": 9622792
+      },
+      "code_space": {
+        "memorySize": 1998848,
+        "committedMemory": 1998848,
+        "capacity": 1728864,
+        "used": 1728864,
+        "available": 0
+      },
+      "map_space": {
+        "memorySize": 4722688,
+        "committedMemory": 4722688,
+        "capacity": 2891040,
+        "used": 2891040,
+        "available": 0
+      },
+      "large_object_space": {
+        "memorySize": 43741184,
+        "committedMemory": 43741184,
+        "capacity": 43610584,
+        "used": 43610584,
+        "available": 0
+      },
+      "code_large_object_space": {
+        "memorySize": 622592,
+        "committedMemory": 622592,
+        "capacity": 550560,
+        "used": 550560,
+        "available": 0
+      },
+      "new_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 1047328,
+        "used": 0,
+        "available": 1047328
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 78.5249,
+    "kernelCpuSeconds": 12.6492,
+    "cpuConsumptionPercent": 89.3864,
+    "maxRss": 273174528,
+    "pageFaults": {
+      "IORequired": 261,
+      "IONotRequired": 182214
+    },
+    "fsActivity": {
+      "reads": 4380,
+      "writes": 0
+    }
+  },
+  "uvthreadResourceUsage": {
+    "userCpuSeconds": 47.2929,
+    "kernelCpuSeconds": 11.1329,
+    "cpuConsumptionPercent": 57.2802,
+    "fsActivity": {
+      "reads": 4329,
+      "writes": 0
+    }
+  },
+  "libuv": [
+  ],
+  "environmentVariables": {
+    "WEBPACK_DEV_SERVER": "true",
+    "USER": "azizacalm",
+    "LOGNAME": "azizacalm",
+    "HOME": "/root",
+    "MAIL": "/var/mail/azizacalm",
+    "PATH": "/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin:/root/bin",
+    "TERM": "xterm-256color",
+    "BLOCKSIZE": "K",
+    "MM_CHARSET": "UTF-8",
+    "LANG": "ru_RU.UTF-8",
+    "SHELL": "/bin/csh",
+    "SSH_CLIENT": "172.16.151.185 54032 22",
+    "SSH_CONNECTION": "172.16.151.185 54032 172.16.151.180 22",
+    "SSH_TTY": "/dev/pts/0",
+    "HOSTTYPE": "FreeBSD",
+    "VENDOR": "amd",
+    "OSTYPE": "FreeBSD",
+    "MACHTYPE": "x86_64",
+    "SHLVL": "2",
+    "PWD": "/s/proj/AngularTISC/ConcepTIS",
+    "GROUP": "azizacalm",
+    "HOST": "ConcepTIS",
+    "REMOTEHOST": "172.16.151.185",
+    "EDITOR": "vi",
+    "PAGER": "more"
+  },
+  "userLimits": {
+    "core_file_size_blocks": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "data_seg_size_kbytes": {
+      "soft": 34359738368,
+      "hard": 34359738368
+    },
+    "file_size_blocks": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_locked_memory_bytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_memory_size_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "open_files": {
+      "soft": 13752,
+      "hard": 13752
+    },
+    "stack_size_bytes": {
+      "soft": 536870912,
+      "hard": 536870912
+    },
+    "cpu_time_seconds": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_user_processes": {
+      "soft": 3445,
+      "hard": 3445
+    },
+    "virtual_memory_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    }
+  },
+  "sharedObjects": [
+    "/usr/local/bin/node",
+    "/lib/libz.so.6",
+    "/usr/local/lib/libuv.so.1",
+    "/usr/local/lib/libcares.so.2",
+    "/usr/local/lib/libnghttp2.so.14",
+    "/usr/local/lib/libicui18n.so.64",
+    "/usr/local/lib/libicuuc.so.64",
+    "/usr/local/lib/libicudata.so.64",
+    "/lib/libelf.so.2",
+    "/lib/libutil.so.9",
+    "/lib/libkvm.so.7",
+    "/usr/lib/libexecinfo.so.1",
+    "/usr/lib/libc++.so.1",
+    "/lib/libcxxrt.so.1",
+    "/lib/libm.so.5",
+    "/lib/libthr.so.3",
+    "/lib/libc.so.7",
+    "/usr/lib/librt.so.1",
+    "/usr/lib/libdl.so.1",
+    "/lib/libgcc_s.so.1",
+    "/libexec/ld-elf.so.1"
+  ]
+}
